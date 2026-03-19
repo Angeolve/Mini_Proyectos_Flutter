@@ -1,22 +1,38 @@
+# Información básica del proyecto
 name: chatbot_inscripciones
 description: "Mi chatbot con el tec."
-publish_to: "none"
+publish_to: "none" # Evita que publiques tu código por accidente en pub.dev
 
+# Versión de tu app: 1.0.0 es la versión visual, +1 es el número de compilación (build)
 version: 1.0.0+1
 
 environment:
+  # Define que usas el SDK de Dart 3.x (moderno y rápido)
   sdk: ^3.10.8
 
 dependencies:
+  # Lo que tu app necesita para funcionar en el cel del usuario
   flutter:
     sdk: flutter
+
+  # Iconos estilo iPhone (iOS)
   cupertino_icons: ^1.0.8
+
+  # EL MOTOR DEL CHAT: Esta es la librería que conecta con Kommunicate
+  # Asegúrate de que la versión 2.0.8 sea compatible con tu versión de Flutter
   kommunicate_flutter: ^2.0.8
 
 dev_dependencies:
+  # Herramientas que solo usas tú mientras programas (no se incluyen en el APK final)
   flutter_test:
     sdk: flutter
+
+  # Reglas de buen código para que Flutter te regañe si escribes algo "sucio"
   flutter_lints: ^6.0.0
 
 flutter:
+  # Habilita el diseño moderno de Google (Material 3)
   uses-material-design: true
+
+  # Si vas a usar el logo del Lobo o imágenes del Tec,
+  # tendrías que agregarlas aquí abajo en una sección de 'assets:'

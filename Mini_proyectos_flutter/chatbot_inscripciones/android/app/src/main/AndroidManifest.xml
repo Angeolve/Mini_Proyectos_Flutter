@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.chatbot_inscripciones">
 
-    <!-- Permiso para Internet -->
+    <!-- Permiso para Internet, necesario para que Kommunicate pueda conectarse al chat -->
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
@@ -20,7 +20,7 @@
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">
-
+            
             <!-- Tema normal visible mientras Flutter inicia -->
             <meta-data
                 android:name="io.flutter.embedding.android.NormalTheme"
@@ -38,10 +38,5 @@
             android:value="2" />
     </application>
 
-    <queries>
-        <intent>
-            <action android:name="android.intent.action.PROCESS_TEXT"/>
-            <data android:mimeType="text/plain"/>
-        </intent>
-    </queries>
+    <!-- queries no afecta directamente al chatbot, solo a la capacidad de la app de ver otros intents -->
 </manifest>

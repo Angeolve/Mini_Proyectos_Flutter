@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
                 print("Error: $e");
               }
             },
-            child: const Text("Abrir Chat"),
+            child: const Text("Hola! Da  click para iniciar el chat"),
           ),
         ),
       ),
